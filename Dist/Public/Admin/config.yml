@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/images
+public_folder: /images
+locale: fr
+collections:
+  - name: content
+    label: Contenu du site
+    files:
+      - name: site
+        label: Pages et récits
+        file: src/content/site-content.ts
+        fields:
+          - label: Note
+            name: note
+            widget: markdown
+            default: "Le contenu éditorial principal est conservé dans ce module local. Les valeurs d'impact proviennent de l'API."
